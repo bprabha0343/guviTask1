@@ -1,0 +1,15 @@
+HTTP/1.1 and HTTP/2 are different versions of the Hypertext Transfer Protocol (HTTP) used for communication between web browsers and web servers.
+
+1. Binary vs. Text Protocol: HTTP/1.1 uses a text-based protocol, where requests and responses are sent as plain text. HTTP/2, on the other hand, uses a binary protocol, which means the messages are encoded in binary format. This binary format allows for more efficient parsing and serialization of data.
+
+2. Multiplexing: One of the significant improvements in HTTP/2 is the introduction of multiplexing. In HTTP/1.1, browsers were limited to sending one request at a time per connection, leading to a phenomenon known as "head-of-line blocking." HTTP/2 allows multiple requests and responses to be sent concurrently over a single connection, eliminating head-of-line blocking and improving performance.
+
+3. Server Push: HTTP/2 introduces the concept of server push, where the server can proactively send additional resources to the client before the client requests them. This feature can help reduce latency by eliminating round trips and allowing the server to push critical assets to the client in advance.
+
+4. Header Compression: HTTP/2 includes a new header compression algorithm called HPACK, which reduces overhead by compressing the headers sent in each request and response. This helps reduce the size of the messages, resulting in faster transmission and reduced bandwidth consumption.
+
+5. Prioritization: HTTP/2 introduces the ability to assign priorities to requests, allowing the client to specify which resources are more important. This enables more efficient resource allocation and can improve the overall performance of the web page.
+
+6. Security: While both versions can be used with or without encryption, HTTP/2 encourages the use of encryption by making it a requirement for certain advanced features. This emphasis on security aligns with the industry trend of promoting secure communication through HTTPS.
+
+Overall, HTTP/2 offers several performance improvements over HTTP/1.1, including multiplexing, server push, header compression, and prioritization. These enhancements contribute to faster and more efficient web browsing experiences.
